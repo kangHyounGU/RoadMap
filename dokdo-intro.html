@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>졸업후 계획image.png</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="title.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">동의과학대학교 졸업 이후</a></li>
+				<li><a href="#movie" data-rel="dialog">편입한 이후</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">대학원을 졸업한 이후</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>동의과학대학교 / 201915765 / 강현구</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>동의과학대학교를 졸업한 이후</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="DIT.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>동의과학대학교 재학 중 나의 생각</h3>
+					<p>동의과학대학교 재학중에는 학교를 다니면서 다양한 언어를 배우고 공부를 해가면서 내가 하고 싶은 분야를 찾은 후 취업을 하고자 생각을 하였습니다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>군대를 다녀온 후</h3>
+					<p>군대에서 다양한 사람들을 만나고 복무하는 동안 다양한 것을 배웠습니다. 그러면서 배우는 것이 재미있다는 생각을 하게 되어 바로 복학을 하고자 생각했습니다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>졸업을 앞둔 지금과 앞으로</h3>
+					<p>복학을 하면서 다시 처음부터 배우고자 하니 어려웠지만 그래도 배우고 내것이 되었다는 성취감을 알게되었습니다. 그래서 4년제 대학교에 편입을 하여 대학원을 가고자 생각을 바꾸었습니다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>동의과학대학교 / 201915765 / 강현구</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="collapsible" data-collapsed="false">
+			<h3>편입을 할 학교 소개와 계획</h3>
+			<p>학교는 부경대학교에 가기위해 토익공부와 학교 성적을 받기 위해 공부를 하고 있습니다. 이후 부경대에 간 후 컴퓨터공학부(소프트웨어 및 인공지능전공)과 함께 데이터정보과학부를 복수 전공으로 하고싶습니다.</p>
+		</div>
+		
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>독도 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">부경대학교 소개</div><br/>
+			<li><iframe width="100%" height="315" src="https://www.youtube.com/embed/fuj0MR-7vDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">인공지능 기술에 대한 간략한 소개</div><br/>
+			<li><iframe width="100%" height="315" src="https://www.youtube.com/embed/4t2QLQ-7-9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>부경대학교를 졸업한 이후</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">대학원 편입</div><br/>
+			<p>부경대학교를 졸업한 이후 대학원에 들어갈 생각입니다. 대학원에 들어가서 연구직이나 교수직을 하고 싶다고 생각을하고 있으며 분야는 인공지능쪽으로 생각을 하고 있습니다.
+				대학원은 부산권 지역이나 서울권 지역으로 생각을 하고 있으며 이를 위한 공부도 부경대를 다니면서 같이 할 생각입니다.
+			</p>
+			<div  style="text-align:center">
+				<img src="istock.jpg">
+			</div>
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>대학원을 졸업한 후</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">취업 준비</div><br/>
+			<p>대학원에서 인공지능 분야로 박사학위까지 취득을 할 생각입니다. 이후 취업을 하게 된다면 Meta와 같은 인공지능을 전문적으로 개발 연구하면서 다른 분야에 적용시키는
+			일을 하고 싶습니다.</p>
+	
+			<img src="Meta.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
